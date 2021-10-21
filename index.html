@@ -1,0 +1,182 @@
+---
+layout: poosl_default
+title: POOSL | Home
+---
+
+<section id="intro" class="">
+    <div class="container">
+        <div class="row align-items-end">
+            {% include section_intro.html
+                title="Early Validation by Simulation" 
+                desc="POOSL (Parallel Object-Oriented Specification Language) combines modeling with analysis to make architecture decisions on complex hardware and software systems."                
+                
+                href_1="download.html"
+                btn_txt_1="Download"
+                target_1="self"
+                href_2="http://poosl.esi.nl/downloads/manuals/InstallationManual.pdf"      
+                btn_txt_2="Get Started"
+                target_2="self"      
+                
+                img_href="overview.html"
+                img_target="self"
+                img_src="images/screenshots/overview.png"
+                img_alt="Some text"
+            %}
+        </div>
+    </div>
+</section>
+
+<section id="" class="bg_lightest_grey text-center">
+    <div class="container">
+            {% include block_heading.html
+                title="Evaluate Complex System’s Architecture"                
+                sub_title=""
+                desc="POOSL supports the design process of complex systems characterized<br>by hardware and software components interacting closely with each other. <br><br>In the early phases of these systems’ development, requirements are still unclear<br>and many decisions have to be taken on the system architecture, the responsibilities,<br>the behavior and the interactions between components. <br><br>POOSL offers a general purpose method and tool for describing and simulating<br>complex systems’ architecture for the early evaluation of their key structural<br>and behavioral aspects, requirements and performance."
+            %}
+
+            <div class="row">
+                {% include block_cols.html
+                    col="4"
+                    icon_name="fas fa-cogs"
+                    icon_color="txt_indigo"
+                    title="Modal Simulation" 
+                    desc=""
+                %}
+                {% include block_cols.html
+                    col="4"
+                    icon_name="fas fa-tasks"
+                    icon_color="txt_indigo"
+                    title="Functional Verification" 
+                    desc=""
+                %}
+                {% include block_cols.html
+                    col="4"
+                    icon_name="fas fa-tachometer-alt"
+                    icon_color="txt_indigo"
+                    title="Performance Analysis" 
+                    desc=""
+                %}
+            </div>
+    </div>
+</section>
+
+<section id="" class="text-center">
+    <div class="container">
+        {% include block_heading.html
+            title="Why POOSL"                
+            sub_title=""
+            desc=""
+        %}
+        <div class="row">
+            {% include block_cols.html
+                col="4 offset-md-2"
+                icon_name="fas fa-fast-forward"
+                icon_color="txt_indigo"
+                title="Shorten Development Time" 
+                desc="POOSL shortens the development time of complex systems by providing fast insights into requirements and early design decisions, thereby reducing the risk of expensive iterations during design, integration and testing."
+            %}
+            {% include block_cols.html
+                col="4"
+                icon_name="fas fa-project-diagram"
+                icon_color="txt_indigo"
+                title="Right Abstraction Level" 
+                desc="POOSL fills the gap between modeling tools (like Simulink and Rhapsody), often requiring detailed modeling at code level, and plain drawing tools (such as Visio and UML drawing tools) that do not support simulation-based analysis."
+            %}
+        </div>
+        <div class="row">
+            {% include block_cols.html
+                col="4 offset-md-2"
+                icon_name="fas fa-gem"
+                icon_color="txt_indigo"
+                title="Industry-Strength" 
+                desc="The POOSL tools have a proven track record with respect to successful application in several high-tech industries, notably ASML, Philips, Vanderlande Industries, Lucent Technologies, Alcatel Bell, IBM Research, Océ Technologies, NXP, Chess, Siemens VDO, and TNO."
+            %}
+            {% include block_cols.html
+                col="4"
+                icon_name="fas fa-grin"
+                icon_color="txt_indigo"
+                title="User-friendly Tooling" 
+                desc="POOSL comes with user-friendly tools with a strong focus on interactive model development and scalable analysis. Light-weight model development and validation is supported by an Integrated Development Environment in combination with a scalable simulator."
+            %}
+        </div>
+        <div class="row">
+            {% include block_cols.html
+                col="4 offset-md-2"
+                icon_name="fas fa-plug"
+                icon_color="txt_indigo"
+                title="Integration" 
+                desc="The POOSL tools allow easy integration with external visualization and control tools via sockets and files. Various model libraries provide common data structures, stochastic distributions and observers for evaluation of, for example, worst/best case and average case performance properties."
+            %}
+            {% include block_cols.html
+                col="4"
+                icon_name="fas fa-box-open"
+                icon_color="txt_indigo"
+                title="Open-Source Project" 
+                desc="POOSL was originally developed at Eindhoven University of Technology (TU/e) in the Allegio project, funded by COMMIT/ and the Crystal project, funded by ARTEMIS. Adopted by ESI (TNO) as a standard modeling and analysis tool following its successful application in the high-tech industry, it is now an open-source project contributed by TNO and Obeo to the Eclipse Foundation."
+            %}
+        </div>
+    </div>
+</section>
+
+<section id="" class="bg_lightest_grey text-center">
+    <div class="container">
+        {% include block_heading.html
+            title="Need Support?"                
+            sub_title=""
+            desc=""
+        %}
+
+    <div class="row">
+        {% include block_cols.html
+            col="4"
+            icon_name="far fa-file-alt"
+            icon_color="txt_indigo"
+            title="Documentation" 
+            desc="Learn how to use Acceleo, thanks to online complete user guides and reference manuals"
+            href="resources.html"
+            link_txt="Learn more"
+            href_icon="fas fa-arrow-alt-circle-right"
+        %}
+        {% include block_cols.html
+            col="4"
+            icon_name="far fa-comment"
+            icon_color="txt_indigo"
+            title="Forum" 
+            desc="Find relevant posts/answers. No solution yet to your concern? Come and ask your question    "
+            href=""
+            target="_blank"
+            link_txt="Learn more"
+            href_icon="fas fa-arrow-alt-circle-right"
+        %}
+        {% include block_cols.html
+            col="4"
+            icon_name="far fa-life-ring"
+            icon_color="txt_indigo"
+            title="Professional support" 
+            desc="Obeo provides training, expertise, custom development and support plans"
+            href="https://www.obeosoft.com/en/obeo-enterprise-for-poosl"
+            target="_blank"
+            link_txt="Learn more"
+            href_icon="fas fa-arrow-alt-circle-right"
+        %}
+    </div>
+    </div>
+</section>
+<section id="leads" class="text-center">
+    <div class="container">
+        {% include block_heading.html
+            title="Project Lead"                
+            sub_title=""
+            desc=""
+        %}
+        <div class="row align-items-center">
+            <div class="col-md-4 offset-md-2 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">            
+                <p><a href="https://esi.nl/" title="Logo Obeo" target="_blank"><img src="{{  site.baseurl }}/images/logos/logo_esi.png"></a></p>
+            </div>
+            <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">            
+                <p><a href="https://www.obeosoft.com" title="Logo Obeo" target="_blank"><img src="{{  site.baseurl }}/common_assets/images/logos/logo_obeo.png"></a></p>
+            </div>
+        </div>
+    </div>       
+</div>
+</section>

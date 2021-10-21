@@ -1,2 +1,0 @@
-# POOSL-Website
-POOSL Website
