@@ -13,14 +13,14 @@ title: POOSL | Home
                 href_1="download.html"
                 btn_txt_1="Download"
                 target_1="self"
-                href_2="http://poosl.esi.nl/downloads/manuals/InstallationManual.pdf"      
+                href_2="https://raw.githubusercontent.com/ObeoNetwork/POOSL/main/docs/User/InstallationManual.pdf"      
                 btn_txt_2="Get Started"
                 target_2="self"      
                 
-                img_href="overview.html"
+                img_href="features.html"
                 img_target="self"
                 img_src="images/screenshots/overview.png"
-                img_alt="Some text"
+                img_alt="POOSL - Overview"
             %}
         </div>
     </div>
@@ -39,7 +39,7 @@ title: POOSL | Home
                     col="4"
                     icon_name="fas fa-cogs"
                     icon_color="txt_indigo"
-                    title="Modal Simulation" 
+                    title="Model Simulation" 
                     desc=""
                 %}
                 {% include block_cols.html
@@ -128,23 +128,12 @@ title: POOSL | Home
 
     <div class="row">
         {% include block_cols.html
-            col="4"
+            col="4 offset-md-2"
             icon_name="far fa-file-alt"
             icon_color="txt_indigo"
             title="Documentation" 
-            desc="Learn how to use Acceleo, thanks to online complete user guides and reference manuals"
+            desc="Learn how to use POOSL, thanks to online complete user guides and reference manuals"
             href="resources.html"
-            link_txt="Learn more"
-            href_icon="fas fa-arrow-alt-circle-right"
-        %}
-        {% include block_cols.html
-            col="4"
-            icon_name="far fa-comment"
-            icon_color="txt_indigo"
-            title="Forum" 
-            desc="Find relevant posts/answers. No solution yet to your concern? Come and ask your question    "
-            href=""
-            target="_blank"
             link_txt="Learn more"
             href_icon="fas fa-arrow-alt-circle-right"
         %}
@@ -166,12 +155,10 @@ title: POOSL | Home
     <div class="container">
         {% include block_heading.html
             title="Project Lead"                
-            sub_title=""
-            desc=""
         %}
         <div class="row align-items-center">
             <div class="col-md-4 offset-md-2 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">            
-                <p><a href="https://esi.nl/" title="Logo Obeo" target="_blank"><img src="{{  site.baseurl }}/images/logos/logo_esi.png"></a></p>
+                <p><a href="https://esi.nl/" title="Logo ESI" target="_blank"><img src="{{  site.baseurl }}/images/logos/logo_esi.png"></a></p>
             </div>
             <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">            
                 <p><a href="https://www.obeosoft.com" title="Logo Obeo" target="_blank"><img src="{{  site.baseurl }}/common_assets/images/logos/logo_obeo.png"></a></p>
