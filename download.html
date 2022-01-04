@@ -1,0 +1,59 @@
+---
+layout: poosl_default
+title: POOSL | Download
+---
+
+<section>
+    <div class="container">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+            <a class="nav-link active" href="#ready_use_package" data-toggle="pill" aria-controls="pills-profile" aria-selected="true">Ready-to-Use Package</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#update_site" data-toggle="pill" aria-controls="pills-profile" aria-selected="false">Update Site</a>
+            </li>
+        </ul>
+
+        <div class="tab-content text-center" id="pills-tabContent">  
+            <div class="tab-pane fade show active" id="ready_use_package">
+                <div class="row">
+                    {% include block_cols.html
+                        col="6 offset-md-3"
+                        icon_name="fas fa-download"
+                        icon_color="txt_indigo"
+                        title="Download a Ready-to-Use Package" 
+                        desc="This package integrates POOSL in a professionally supported Eclipse environment."
+                        href="https://www.obeosoft.com/en/obeo-enterprise-for-poosl"
+                        href_class="btn btn-default"
+                        target="_blank"
+                        link_txt="Download Obeo Enterprise for POOSL"
+                    %}
+                </div>
+            </div>
+            <div class="tab-pane fade" id="update_site">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <div>
+                            <p><i class="fas fa-redo fa-3x pa2  txt_indigo" aria-hidden="true"></i></p>
+                        </div>
+                        <div>
+                            <h4>Install POOSL from Update Site</h4><br>
+                            <h5>Latest Release</h5>
+                            <p>Add this URL to your Eclipse Installation to reach POOSL Update Site.</p>
+                            <p><input type="text" value="https://eclipse.github.io/poosl/release/1.0.0/"></p>
+                            <p> Help for latest version is available in the tool using F1 or from <a href="https://obeonetwork.github.io/POOSL/nightly/help/index.html">here</a>.</p><br>
+                            <h5>Latest Nightly</h5>
+                            <p>Add this URL to your Eclipse Installation to reach POOSL Update Site.</p>
+                            <p><input type="text" value="https://eclipse.github.io/poosl/nightly/"></p><br>
+                            <h5>Previous Releases</h5>
+                            <p>Previous releases of the POOSL IDE are still available through <a href="https://esi.nl/research/output/tools/poosl/installation">this page</a>.</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        </div>
+    </div>
+</section>
