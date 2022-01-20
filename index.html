@@ -31,30 +31,30 @@ title: POOSL | Home
             {% include block_heading.html
                 title="Evaluate Complex System’s Architecture"                
                 sub_title=""
-                desc="PooSL supports discrete-event simulation in the early phases of architecture design,<br>thanks to functional mock-up validation and performance analysis<br><br>When starting the development of complex systems characterized by hardware and software<br>components interacting closely with each other, requirements are still unclear<br>and many decisions have to be taken on the system architecture, the responsibilities,<br>the behavior and the interactions between these components. <br><br>POOSL offers a general purpose method and tool for describing and simulating<br>complex systems’ architecture for the early evaluation of their key structural<br>and behavioral aspects, requirements and performance."
+                desc="PooSL supports discrete-event simulation in the early phases of architecture design,<br>thanks to functional mock-up validation and performance analysis.<br><br>When starting the development of complex systems characterized by hardware and software<br>components interacting closely with each other, requirements are still unclear<br>and many decisions have to be taken on the system architecture, the responsibilities,<br>the behavior and the interactions between these components. <br><br>POOSL offers a general purpose method and tool for describing and simulating<br>complex systems’ architecture for the early evaluation of their key structural<br>and behavioral aspects, requirements and performance."
             %}
 
             <div class="row">
                 {% include block_cols.html
                     col="4"
-                    icon_name="fas fa-cogs"
-                    icon_color="txt_indigo"
-                    title="Model Simulation" 
-                    desc="interactive debugging (control, inspect, observe) and high-performance execution"
-                %}
-                {% include block_cols.html
-                    col="4"
                     icon_name="fas fa-tasks"
                     icon_color="txt_indigo"
                     title="Functional Verification" 
-                    desc="Prototype rapidly by adding formal behavior. Detect functional mistakes before starting to simulate physical systems"
+                    desc="Understand what the customer really wants:<br>rapid prototyping with formal behavior and static model analysis to validate requirements and early detect modeling mistakes."
+                %}
+                {% include block_cols.html
+                    col="4"
+                    icon_name="fas fa-cogs"
+                    icon_color="txt_indigo"
+                    title="Model Simulation" 
+                    desc="Understand how the architecture will function:<br>high-performance execution and interactive debugging (control, inspect, observe) to simulate physical systems."
                 %}
                 {% include block_cols.html
                     col="4"
                     icon_name="fas fa-tachometer-alt"
                     icon_color="txt_indigo"
                     title="Performance Analysis" 
-                    desc="Throughput, latency, resource usage/availability, ..."
+                    desc="Estimate the expected throughput and latency:<br>focus on critical system behavior, explore trade-offs between multiple design alternatives and interpret the analysis results."
                 %}
             </div>
     </div>
