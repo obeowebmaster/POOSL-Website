@@ -12,7 +12,8 @@
 {% endif %}
 
 {% if include.img_src %}
-<p class="wow fadeInDown" data-wow-duration="800ms" data-w ow-delay=".6s"><img src="{{ include.img_src }}" class="{{ include.img_class }}" alt="{{ include.img_title }}"></p>
+<p class="wow fadeInDown" data-wow-duration="800ms" data-w ow-delay=".6s">
+<iframe class="shadow popup-youtube" width="{{ include.iframe_width }}" height="{{ include.iframe_height }}" src="{{ include.iframe_src }}?fs=1&amp;loop=1&amp;autohide=1&amp;theme=light&amp;color=white" frameborder="0" allowfullscreen=""></iframe></p>
 {% else %}
 <p class="d-none"></p>
 {% endif %}
