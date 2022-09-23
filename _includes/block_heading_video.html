@@ -1,19 +1,26 @@
-<h2 class="title wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".2s">{{ include.title }}</h2> 
-{% if include.sub_title %}
-<h3 class="wow fadeInDown" data-wow-duration="600ms" data-wow-delay=".3s">{{ include.sub_title }}</h3>
-{% else %}
-<h3 class="d-none"></h3>
-{% endif %}
-
-{% if include.desc %}
-<p class="wow fadeInDown" data-wow-duration="700ms" data-w ow-delay=".5s">{{ include.desc }}</p>
-{% else %}
-<p class="d-none"></p>
-{% endif %}
-
-{% if include.iframe_src %}
-<p class="wow fadeInDown" data-wow-duration="800ms" data-w ow-delay=".6s">
-<iframe class="shadow popup-youtube" width="{{ include.iframe_width }}" height="{{ include.iframe_height }}" src="{{ include.iframe_src }}?fs=1&amp;loop=1&amp;autohide=1&amp;theme=light&amp;color=white" frameborder="0" allowfullscreen=""></iframe></p>
-{% else %}
-<p class="d-none"></p>
-{% endif %}
+<div class="col-md-5 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <h1>{{ include.title }}</h1>
+    <p>{{ include.desc }}</p>
+    <p>
+        {% if include.href_1 %}
+        <a href="{{ include.href_1 }}" class="btn btn-default span-right wow fadeInUp" data-wow-delay=".6s" target="_{{ include.target_1 }}">
+            {{ include.btn_txt_1 }}
+        </a>
+        {% else %}
+        <a class="d-none"></a>
+        {% endif %}
+        {% if include.href_2 %}
+        <a href="{{ include.href_2 }}" class="btn btn-primary wow fadeInUp" data-wow-delay=".6s" target="_{{ include.target_2 }}">
+            {{ include.btn_txt_2 }}
+        </a>
+        {% else %}
+        <a class="d-none"></a>
+        {% endif %}
+    </p>                                
+</div>
+    
+<div class="col-md-7 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <p>
+        <iframe class="shadow popup-youtube" width="{{ include.iframe_width }}" height="{{ include.iframe_height }}" src="{{ include.iframe_src }}?fs=1&amp;loop=1&amp;autohide=1&amp;theme=light&amp;color=white" frameborder="0" allowfullscreen=""></iframe></p>
+    </p>                                
+</div>
